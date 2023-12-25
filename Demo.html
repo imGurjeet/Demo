@@ -177,27 +177,23 @@
         .cards
         {
             margin: 60px auto;
-            display: flex;
-            padding-left: 3%;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
             gap: 10px;
+            width: 80%;
             padding-top: 10px;
             padding-bottom: 10px;
-            justify-content: center;
             height: fit-content;
-            width: 95%;
             margin-bottom: 10px;
         }
         .card
         {
-            border: #ffffff solid 2px;  
             margin-left: -40px;
+            border: #ffffff solid 2px;
             color: rgb(255, 255, 255);
             font-family:Verdana, Geneva, Tahoma, sans-serif;
             transform: skewY(2deg);
             background-color: rgb(0, 0, 255);
-            min-width: 200px;
-            width: 350px;
-            max-width: 400px;
             padding-bottom: 20px;
             background-size: cover;
             border-radius: 10px;
@@ -206,6 +202,7 @@
         }
         .card:nth-child(1)
         {
+
             box-shadow: inset 10px 10px 100px rgba(0, 0, 0, 0.448); 
             z-index: 4;
         }
@@ -543,14 +540,13 @@
         {
             .cards
             {
-                width: 90%;
-                margin: 60px 20px;
+                justify-content: center;
                 margin-bottom: 80px;
                 display: grid;
+                grid-template-columns: auto;
             }
             .card
             {
-                height: 215px;
                 box-shadow: inset 0px -80px 80px rgba(0, 0, 0, 0.484);
                 border: #ffffff solid 2px;
                 transform: skewX(2deg);
@@ -597,14 +593,9 @@
                 max-width: 80%;
                 width: fit-content;
             }
-
             .welcome h1
             {
-                font-size: 70px;
-            }
-            .welcome h1:nth-child(2)
-            {
-                font-size: 70px;
+                font-size: 50px;
             }
             .header
             {  
