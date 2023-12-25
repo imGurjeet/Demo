@@ -184,10 +184,12 @@
             padding-top: 10px;
             padding-bottom: 10px;
             height: fit-content;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
         }
         .card
         {
+            width: fit-content;
+            height: fit-content;
             margin-left: -40px;
             border: #ffffff solid 2px;
             color: rgb(255, 255, 255);
@@ -439,7 +441,7 @@
         .footerbox:hover h1
         {
             position: relative;
-            top: 130px;
+            top: 125px;
             z-index: -2;
         }
         .feedback
@@ -538,18 +540,22 @@
 
         @media screen and (max-width: 800px) 
         {
+            
+            
             .cards
             {
                 justify-content: center;
-                margin-bottom: 80px;
+                margin-bottom: 100px;
                 display: grid;
                 grid-template-columns: auto;
+                max-width: 60%;
             }
             .card
             {
                 box-shadow: inset 0px -80px 80px rgba(0, 0, 0, 0.484);
                 border: #ffffff solid 2px;
                 transform: skewX(2deg);
+                width: 96%;
                 margin-bottom: -80px;
             }
             .card:nth-child(1)
@@ -576,7 +582,6 @@
             {
                 margin-left: -20px;
                 margin-bottom: 0px;
-                transform: none;
             }
             .photocardbox
             {
@@ -626,10 +631,14 @@
             {
                 display: block;
             }
-            
+            .footer
+            {
+            border-radius: 0px;
+            }
         }
         @media screen and (max-width: 600px)
         {
+            
             .footer
             {
                 overflow-x: scroll;
@@ -654,8 +663,21 @@
             {
                 transform: translateX(10px);
             }
+            .commentbox
+            {
+                display: grid;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            .commentbox input
+            {
+                justify-self: center;
+                border-radius: 40px !important;
+                margin-top: 10px;
+            }
+            
         } 
-
 
 
         .cursor 
@@ -1023,7 +1045,6 @@
                 document.querySelector(".card:nth-child(4) p").style.display="block";
                 document.querySelector(".card:nth-child(4) span").style.display="block";
             }     
-        
 
     var cursor = document.getElementById("cursor");
     document.body.addEventListener("mousemove", function(e) 
